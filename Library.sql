@@ -86,3 +86,9 @@ select *from book_copies;
 insert into book_lending values('113','3456','99','2020-05-24','2020-05-28');
 insert into book_lending values('113','3457','98','2020-06-10','2020-07-29');
 select *from book_lending;
+
+
+--retrieving data
+--Getting details of all book in the library -- id,title,name of publisher,authors, copies in each branch etc
+--Get th eparticulars of borrowers who have borrowed more than 3 books , but from jun 2017
+
