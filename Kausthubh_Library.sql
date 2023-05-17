@@ -120,6 +120,8 @@ b.book_id = bc.book_id and b.book_id = ba.book_id;
 --Particulars of borrowers who have borrowed more than 3 books, but from Jan 2023 to Jun 2023
 select distinct card_no from book_lending bl where (date_out between '2023-01-01' and '2023-06-01') group by card_no having count(*)>1;
 
+--Details of publisher who published more than 3 books
+select p.name from publisher p,book b where(p.name = b.pub_name) group by p.name having count(*)>0;
 
 --Retrieve the details of Publishers without any books.
 select p.name,p.address,p.phone from publisher p
