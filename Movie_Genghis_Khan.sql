@@ -108,3 +108,12 @@ select distinct mov_title from movies m, movie_cast mc where m.mov_id=mc.mov_id 
 select act_name from actor a join movie_cast mc on a.act_id=mc.act_id join movies
 m on mc.mov_id = m.mov_id where m.mov_year<2004 intersect select act_name from 
 actor a join movie_cast mc on a.act_id=mc.act_id join movies m on mc.mov_id = m.mov_id where m.mov_year>2010;
+
+--4 Find the title of movies and number of stars for each movie that has at least one raitng and find the highest number of stars that movie recieved
+--sort the result by movie_title
+
+select mov_title ,max(rev_stars) from movies m,rating r where m.mov_id = r.mov_id group by(m.mov_title,m.mov_id) order by m.mov_title;
+
+--Find the number of movies released in each year in each language
+
+--find the total number of movies directed by each director
