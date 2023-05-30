@@ -1,0 +1,44 @@
+-- Inserting actors
+INSERT INTO actor (act_id, act_name, act_gender) VALUES ('A001', 'Tom Hanks', 'Male');
+INSERT INTO actor (act_id, act_name, act_gender) VALUES ('A002', 'Emma Stone', 'Female');
+INSERT INTO actor (act_id, act_name, act_gender) VALUES ('A003', 'Brad Pitt', 'Male');
+INSERT INTO actor (act_id, act_name, act_gender) VALUES ('A004', 'Meryl Streep', 'Female');
+INSERT INTO actor (act_id, act_name, act_gender) VALUES ('A005', 'Leonardo DiCaprio', 'Male');
+INSERT INTO actor (act_id, act_name, act_gender) VALUES ('A006', 'Jennifer Lawrence', 'Female');
+
+
+-- Inserting directors
+
+INSERT INTO director (dir_id, dir_name, dir_phone) VALUES ('D004', 'Quentin Tarantino', 5556667777);
+INSERT INTO director (dir_id, dir_name, dir_phone) VALUES ('D005', 'Alfred Hitchcock', 9998887777);
+INSERT INTO director (dir_id, dir_name, dir_phone) VALUES ('D006', 'James Cameron', 4443332222);
+INSERT INTO director (dir_id, dir_name, dir_phone) VALUES ('D001', 'Christopher Nolan', 1234567890);
+INSERT INTO director (dir_id, dir_name, dir_phone) VALUES ('D002', 'Steven Spielberg', 9876543210);
+INSERT INTO director (dir_id, dir_name, dir_phone) VALUES ('D003', 'Martin Scorsese', 1112223333);
+
+-- Inserting movies
+
+INSERT INTO movies (mov_id, mov_title, mov_year, mov_lang, dir_id) VALUES ('M004', 'Pulp Fiction', 1994, 'English', 'D004');
+INSERT INTO movies (mov_id, mov_title, mov_year, mov_lang, dir_id) VALUES ('M005', 'Psycho', 1960, 'English', 'D005');
+INSERT INTO movies (mov_id, mov_title, mov_year, mov_lang, dir_id) VALUES ('M006', 'Avatar', 2009, 'English', 'D006');
+INSERT INTO movies (mov_id, mov_title, mov_year, mov_lang, dir_id) VALUES ('M001', 'Inception', 2010, 'English', 'D001');
+INSERT INTO movies (mov_id, mov_title, mov_year, mov_lang, dir_id) VALUES ('M002', 'Jurassic Park', 1993, 'English', 'D002');
+INSERT INTO movies (mov_id, mov_title, mov_year, mov_lang, dir_id) VALUES ('M003', 'The Departed', 2006, 'English', 'D003');
+
+-- Inserting movie cast
+INSERT INTO movie_cast (act_id, mov_id, role) VALUES ('A004', 'M004', 'Margaret Booth');
+INSERT INTO movie_cast (act_id, mov_id, role) VALUES ('A005', 'M004', 'Vincent Vega');
+INSERT INTO movie_cast (act_id, mov_id, role) VALUES ('A006', 'M004', 'Mia Wallace');
+INSERT INTO movie_cast (act_id, mov_id, role) VALUES ('A001', 'M001', 'Cobb');
+INSERT INTO movie_cast (act_id, mov_id, role) VALUES ('A002', 'M001', 'Arthur');
+INSERT INTO movie_cast (act_id, mov_id, role) VALUES ('A003', 'M001', 'Eames');
+
+-- Inserting movie ratings
+INSERT INTO rating (rat_id, mov_id, rev_stars) VALUES ('R004', 'M004', 5);
+INSERT INTO rating (rat_id, mov_id, rev_stars) VALUES ('R005', 'M005', 4);
+INSERT INTO rating (rat_id, mov_id, rev_stars) VALUES ('R006', 'M006', 4);
+INSERT INTO rating (rat_id, mov_id, rev_stars) VALUES ('R001', 'M001', 5);
+INSERT INTO rating (rat_id, mov_id, rev_stars) VALUES ('R002', 'M002', 4);
+INSERT INTO rating (rat_id, mov_id, rev_stars) VALUES ('R003', 'M003', 4);
+
+select * from movies;
