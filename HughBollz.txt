@@ -1,0 +1,12 @@
+Order Database
+Schema:
+Salesman(Salesman_id,name,City,Commision)
+Customer(Customer_id,Cust_name,City,Grade)
+Orders(Ord_no,Purchase_Amt,Ord_Date,Customer_id,Salesman_id)
+
+SQL Queries:
+1.Count the customers with grades above Bangalore's average
+2.Find the name and numbers of all salesman  who had more than one customer.
+3.List all the salesman and indicate those who have and don't have customers in their cities (Use UNION operation)
+4.Create a veiw that finds the salesman who has the customer with the highest order of a day. 
+5.Demonstrate the delete operation bu removing salesman with id 1000. All his orders must also be deleted 
