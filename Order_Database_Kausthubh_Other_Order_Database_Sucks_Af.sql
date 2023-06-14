@@ -117,5 +117,5 @@ create view highest_order as
 	select name,ord_date
 	from highest_order h
 	where purchase_amt=(select max(purchase_amt)
-	from hgihest_order
-	where h.ord_date=ord.date);
+	from highest_order
+	where h.ord_date=ord_date);
