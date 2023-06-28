@@ -1,0 +1,13 @@
+﻿College Database
+
+Consider the schema for College Database:
+
+Student(**USN**,SName,Address,Phone,Gender)
+
+SEMSEC(**SSID**,Sem,Sec)
+
+CLASS(**USN**,**SSID**)
+
+SUBJECT(**SubCode**,Title,Sem,Credits)
+
+IAMMARKS(**USN**,**SubCode**,**SSID**,Test1,Test2,Test3,FinalIA)
