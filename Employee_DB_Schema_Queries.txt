@@ -1,0 +1,14 @@
+Schema:
+EMPLOYEE(**SSN**,Name,Address,Sex,Salary,SuperSSN,DNo)
+Department(**DNo**,DName,MgrSSN,MgrStartDate)
+Dlocation(**DNo**,**Dloc**)
+Project(**Pno**,Pname,Plocation,Dno)
+Works_On(**SSN**,**Pno**,Hours)
+
+SQL Queries
+-- Make a list of all project number for projects that involve an employee whose last name is scott either as a worker or as a manager of the department that controls the project.
+-- Show the resulting salaries if every employee working on the IOT project is given a 10 precent raise.
+-- Find the sum of salaries of all employees of the 'Accounts' department as well as the maximum salary and the average salary in this department.
+-- Retrieve the name of each employee who works on all the projects controlled by department number 5(use not exists operator)
+-- For each department that has more than five employees retirieve the department number and the number of its employees who are making more than Rs. 6,00,000
+
